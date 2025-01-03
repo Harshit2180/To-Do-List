@@ -21,7 +21,7 @@ You can view the live demo of the project [here](https://harshit2180.github.io/T
 - Add new tasks to your to-do list.
 - Mark tasks as complete or incomplete.
 - Delete tasks from the list.
-- Clean and simple design.
+- Clean,simple, and responsive design.
 
 ## Technologies Used
 
