@@ -6,7 +6,7 @@ const SaveData = () => {
     localStorage.setItem("data", AllTasks.innerHTML);
 }
 
-button.addEventListener("click", () => {
+const AddTask = () => {
     if (InputTask.value === ''){
         alert("Enter a Task");
     }
@@ -21,7 +21,15 @@ button.addEventListener("click", () => {
 
     InputTask.value = "";
     SaveData();
-})
+}
+
+button.addEventListener("click", AddTask);
+
+InputTask.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+        AddTask();
+    }
+});
 
 AllTasks.addEventListener("click", (e) => {
     if (e.target.tagName === "LI") {
